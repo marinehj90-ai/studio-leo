@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PORTFOLIO — STUDIO LEO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">STUDIO LEO</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
+        <a href="portfolio.html" class="nav-link active">PORTFOLIO</a>
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <a href="pricing.html" class="nav-link">PRICING</a>
+        <a href="index.html#contact" class="nav-cta">프로젝트 문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Portfolio Page Content -->
+  <main class="portfolio-page">
+    <div class="portfolio-page-header">
+      <h1 class="portfolio-page-title">PORTFOLIO</h1>
+      <p class="portfolio-page-subtitle">브랜드의 본질을 담는 비주얼 아카이브</p>
+    </div>
+
+    <div class="portfolio-masonry">
+      <div class="portfolio-card" data-title="Portfolio 01" data-desc="STUDIO LEO 비주얼 프로덕션">
+        <img src="images/portfolio-1.jpg" alt="Portfolio 01" loading="lazy">
+      </div>
+      <div class="portfolio-card" data-title="Portfolio 02" data-desc="STUDIO LEO 비주얼 프로덕션">
+        <img src="images/portfolio-2.jpg" alt="Portfolio 02" loading="lazy">
+      </div>
+      <div class="portfolio-card" data-title="Portfolio 03" data-desc="STUDIO LEO 비주얼 프로덕션">
+        <img src="images/portfolio-3.jpg" alt="Portfolio 03" loading="lazy">
+      </div>
+      <div class="portfolio-card" data-title="Portfolio 04" data-desc="STUDIO LEO 비주얼 프로덕션">
+        <img src="images/portfolio-4.jpg" alt="Portfolio 04" loading="lazy">
+      </div>
+      <div class="portfolio-card" data-title="Portfolio 05" data-desc="STUDIO LEO 비주얼 프로덕션">
+        <img src="images/portfolio-5.jpg" alt="Portfolio 05" loading="lazy">
+      </div>
+      <div class="portfolio-card" data-title="Portfolio 06" data-desc="STUDIO LEO 비주얼 프로덕션">
+        <img src="images/portfolio-6.jpg" alt="Portfolio 06" loading="lazy">
+      </div>
+      <div class="portfolio-card" data-title="Portfolio 08" data-desc="STUDIO LEO 비주얼 프로덕션">
+        <img src="images/portfolio-8.jpg" alt="Portfolio 08" loading="lazy">
+      </div>
+      <div class="portfolio-card" data-title="Portfolio 09" data-desc="STUDIO LEO 비주얼 프로덕션">
+        <img src="images/portfolio-9.jpg" alt="Portfolio 09" loading="lazy">
+      </div>
+      <div class="portfolio-card" data-title="Portfolio 10" data-desc="STUDIO LEO 비주얼 프로덕션">
+        <img src="images/portfolio-10.jpg" alt="Portfolio 10" loading="lazy">
+      </div>
+      <div class="portfolio-card" data-title="Portfolio 11" data-desc="STUDIO LEO 비주얼 프로덕션">
+        <img src="images/portfolio-11.jpg" alt="Portfolio 11" loading="lazy">
+      </div>
+    </div>
+  </main>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="닫기">&times;</button>
+    <div class="lightbox-content">
+      <img class="lightbox-img" id="lightboxImg" src="" alt="">
+      <div class="lightbox-info">
+        <h2 class="lightbox-title" id="lightboxTitle"></h2>
+        <p class="lightbox-desc" id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-logo">STUDIO LEO</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/portfolio.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STUDIO LEO — Visual Production</title>
+  <meta name="description" content="Photography, Film, and AI Intelligence visual production studio">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo">STUDIO LEO</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#hero" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
+        <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <a href="pricing.html" class="nav-link">PRICING</a>
+        <a href="#contact" class="nav-cta">프로젝트 문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+  </section>
+
+  <!-- Introduction -->
+  <section class="intro" id="intro">
+    <div class="container">
+      <h1 class="intro-heading reveal">
+        Capturing the future of imagery.<br>
+        We blend Photography, Film, and AI Intelligence to<br>
+        define the next era of visual production.
+      </h1>
+      <p class="intro-korean reveal">
+        AI와 실사의 경계를 감각적으로 넘나들며, 브랜드에 최적화된 고감도 비주얼과 영상을 만듭니다.
+      </p>
+      <p class="intro-desc reveal">
+        STUDIO LEO는 인지적인 벽을 무너뜨리기 위한 비주얼 제작 스튜디오입니다. AI와 실사의 경계를 감각적으로 넘나들며,
+        브랜드에 최적화된 고감도 비주얼과 영상을 만듭니다. 각 프로젝트마다 고유한 비전과 목표에 맞추어 창의적인 해법을 제시합니다.
+      </p>
+    </div>
+  </section>
+
+  <!-- Portfolio Grid -->
+  <section class="portfolio" id="portfolio">
+    <div class="portfolio-grid">
+      <!-- Row 1: [wide] [wide] -->
+      <div class="portfolio-item wide">
+        <img src="images/portfolio-1.jpg" alt="Portfolio" loading="lazy">
+      </div>
+      <div class="portfolio-item wide">
+        <img src="images/portfolio-2.jpg" alt="Portfolio" loading="lazy">
+      </div>
+      <!-- Row 2: [1] [wide] [1] -->
+      <div class="portfolio-item">
+        <img src="images/portfolio-3.jpg" alt="Portfolio" loading="lazy">
+      </div>
+      <div class="portfolio-item wide">
+        <img src="images/portfolio-4.jpg" alt="Portfolio" loading="lazy">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/portfolio-5.jpg" alt="Portfolio" loading="lazy">
+      </div>
+      <!-- Row 3: [wide] [1] [1] -->
+      <div class="portfolio-item wide">
+        <img src="images/portfolio-6.jpg" alt="Portfolio" loading="lazy">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/portfolio-8.jpg" alt="Portfolio" loading="lazy">
+      </div>
+      <div class="portfolio-item">
+        <img src="images/portfolio-9.jpg" alt="Portfolio" loading="lazy">
+      </div>
+      <!-- Row 4: [wide] [wide] -->
+      <div class="portfolio-item wide">
+        <img src="images/portfolio-10.jpg" alt="Portfolio" loading="lazy">
+      </div>
+      <div class="portfolio-item wide">
+        <img src="images/portfolio-11.jpg" alt="Portfolio" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="services-list reveal">
+        <div class="services-item">
+          PHOTOGRAPHY
+          <span class="services-desc">브랜드 화보, 제품 촬영, 공간 촬영 등 고감도 비주얼 포토그래피</span>
+        </div>
+        <div class="services-item">
+          FILM
+          <span class="services-desc">브랜드 필름, 캠페인 영상, 다큐멘터리 등 시네마틱 영상 제작</span>
+        </div>
+        <div class="services-item">
+          AI IMAGING
+          <span class="services-desc">AI 기반 이미지 생성 및 합성으로 새로운 비주얼 경험 창출</span>
+        </div>
+        <div class="services-item">
+          AI VIDEO
+          <span class="services-desc">AI 기술을 활용한 차세대 영상 콘텐츠 제작 및 모션 디자인</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Showcase -->
+  <section class="showcase" id="showcase">
+    <div class="showcase-video-wrap">
+      <video class="showcase-video" autoplay muted loop playsinline poster="">
+        <!-- 실제 영상 파일 경로로 교체하세요 -->
+        <source src="videos/latest-project.mp4" type="video/mp4">
+      </video>
+      <div class="showcase-overlay"></div>
+    </div>
+    <div class="showcase-content reveal">
+      <span class="showcase-label">LATEST PROJECT</span>
+      <h2 class="showcase-title">ARCHITECTURAL VOID</h2>
+      <p class="showcase-subtitle">최근 제작 영상</p>
+      <button class="showcase-play-btn" id="showcasePlayBtn" aria-label="영상 재생">
+        <svg width="20" height="24" viewBox="0 0 20 24" fill="none"><path d="M0 0L20 12L0 24V0Z" fill="white"/></svg>
+        <span>PLAY</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h2 class="contact-heading">PROJECT<br>INQUIRY</h2>
+          <p class="contact-desc">
+            Bring your vision to the next level. If your<br>
+            cross-disciplinary production is crafted.
+          </p>
+        </div>
+        <div class="contact-form-wrap reveal">
+          <form class="contact-form" id="contactForm">
+            <div class="form-field">
+              <label for="name">성명 / NAME</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">이메일 / EMAIL</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-field">
+              <label for="message">프로젝트 내용 / MESSAGE</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="form-submit">프로젝트 문의 보내기</button>
+          </form>
+          <div class="form-success" id="formSuccess" hidden>
+            <p>문의가 성공적으로 전송되었습니다. 감사합니다.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-logo">STUDIO LEO</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
