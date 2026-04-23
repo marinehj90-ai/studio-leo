@@ -28,7 +28,7 @@
         <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
         <a href="services.html" class="nav-link">SERVICES</a>
         <a href="pricing.html" class="nav-link">PRICING</a>
-        <a href="#contact" class="nav-cta">프로젝트 문의</a>
+        <a href="contact.html" class="nav-cta">프로젝트 문의</a>
       </nav>
     </div>
   </header>
@@ -167,9 +167,6 @@
             </div>
             <button type="submit" class="form-submit">프로젝트 문의 보내기</button>
           </form>
-          <div class="form-success" id="formSuccess" hidden>
-            <p>문의가 성공적으로 전송되었습니다. 감사합니다.</p>
-          </div>
         </div>
       </div>
     </div>
@@ -182,6 +179,15 @@
     </div>
   </footer>
 
+  <!-- Alert Modal -->
+  <div class="alert-modal" id="alertModal" aria-modal="true" role="dialog" hidden>
+    <div class="alert-modal__box">
+      <p class="alert-modal__msg" id="alertModalMsg"></p>
+      <button class="alert-modal__close" id="alertModalClose">확인</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>프로젝트 문의 — STUDIO LEO</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header scrolled" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">STUDIO LEO</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="about.html" class="nav-link">ABOUT</a>
+        <a href="portfolio.html" class="nav-link">PORTFOLIO</a>
+        <a href="services.html" class="nav-link">SERVICES</a>
+        <a href="pricing.html" class="nav-link">PRICING</a>
+        <a href="contact.html" class="nav-cta active">프로젝트 문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact contact-page" id="contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <h2 class="contact-heading">PROJECT<br>INQUIRY</h2>
+            <p class="contact-desc">
+              Bring your vision to the next level. If your<br>
+              cross-disciplinary production is crafted.
+            </p>
+          </div>
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contactForm">
+              <div class="form-field">
+                <label for="name">성명 / NAME</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-field">
+                <label for="email">이메일 / EMAIL</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-field">
+                <label for="message">프로젝트 내용 / MESSAGE</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="form-submit">프로젝트 문의 보내기</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <span class="footer-logo">STUDIO LEO</span>
+    </div>
+  </footer>
+
+  <!-- Alert Modal -->
+  <div class="alert-modal" id="alertModal" aria-modal="true" role="dialog" hidden>
+    <div class="alert-modal__box">
+      <p class="alert-modal__msg" id="alertModalMsg"></p>
+      <button class="alert-modal__close" id="alertModalClose">확인</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
